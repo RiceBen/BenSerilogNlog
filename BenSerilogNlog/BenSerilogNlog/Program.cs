@@ -7,10 +7,10 @@ namespace BenSerilogNlog
     {
         static void Main(string[] args)
         {
-            var logger = new LoggerConfiguration()
-                    .WriteTo.Console()
-                    .CreateLogger();
-            logger.Information("Hello World");
+            var myLogger = new MyLogger();
+
+            myLogger.LogInfo("Information");
+
             Console.Read();
         }
     }
