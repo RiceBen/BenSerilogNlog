@@ -9,7 +9,7 @@ namespace BenSerilogNlog
         {
             var myLogger = new MyLogger();
 
-            myLogger.LogInfo("Information");
+            myLogger.LogInfo("This Is An Information Message");
 
             Console.Read();
         }

@@ -15,9 +15,7 @@ namespace BenSerilogNlog
         /// </summary>
         public MyLogger()
         {
-            this._logger = new LoggerConfiguration()
-                    .WriteTo.Console()
-                    .CreateLogger();
+            this._logger = new LoggerConfiguration()                 .WriteTo.Console(                     outputTemplate: "{Timestamp:yyyy-MM-dd HH:mm:ss} [{Level}] {Message}{NewLine}{Exception}"                 )                 .CreateLogger();
         }
 
         /// <summary>
