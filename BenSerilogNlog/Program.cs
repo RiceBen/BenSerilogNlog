@@ -15,7 +15,7 @@ namespace BenSerilogNlog
 
             var logic = new BusinessLogic();
             logic.RunBusiness();
-
+            Log.Debug("this is debug message");
             Console.Read();
         }
     }
