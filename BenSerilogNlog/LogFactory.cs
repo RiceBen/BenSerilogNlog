@@ -8,7 +8,7 @@ using Serilog.Sinks.AwsCloudWatch;
 
 namespace BenSerilogNlog
 {
-    public class LogFactory
+    public static class LogFactory
     {
         public static void InitMyLogger()
         {
