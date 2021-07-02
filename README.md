@@ -4,6 +4,6 @@ Let's practice Serilog
 
 This is my test lab for Serilog
 
-# License
+## License
 
 Reference [License](/LICENSE)
