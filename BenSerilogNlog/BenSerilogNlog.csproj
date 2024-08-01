@@ -58,8 +58,8 @@
       <HintPath>packages\Serilog.Filters.Expressions.2.1.0\lib\net45\Serilog.Filters.Expressions.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Serilog.Sinks.AwsCloudWatch, Version=4.2.29.0, Culture=neutral, PublicKeyToken=23b095b16108dcf5">
-      <HintPath>packages\Serilog.Sinks.AwsCloudWatch.4.2.29\lib\netstandard2.0\Serilog.Sinks.AwsCloudWatch.dll</HintPath>
+    <Reference Include="Serilog.Sinks.AwsCloudWatch, Version=4.3.37.0, Culture=neutral, PublicKeyToken=23b095b16108dcf5">
+      <HintPath>packages\Serilog.Sinks.AwsCloudWatch.4.3.37\lib\netstandard2.0\Serilog.Sinks.AwsCloudWatch.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Serilog.Sinks.Console, Version=6.0.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10">
