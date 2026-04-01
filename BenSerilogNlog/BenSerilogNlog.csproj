@@ -55,7 +55,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Serilog, Version=4.3.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10">
-      <HintPath>packages\Serilog.4.3.0\lib\net471\Serilog.dll</HintPath>
+      <HintPath>packages\Serilog.4.3.1\lib\net471\Serilog.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Serilog.Filters.Expressions, Version=2.1.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
@@ -162,11 +162,10 @@
     </PropertyGroup>
     <Error Condition="!Exists('packages\System.ValueTuple.4.6.1\build\net471\System.ValueTuple.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\System.ValueTuple.4.6.1\build\net471\System.ValueTuple.targets'))" />
     <Error Condition="!Exists('packages\NLog.Schema.6.0.1\build\NLog.Schema.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\NLog.Schema.6.0.1\build\NLog.Schema.targets'))" />
-    <Error Condition="!Exists('packages\Serilog.4.3.0\build\Serilog.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Serilog.4.3.0\build\Serilog.targets'))" />
     <Error Condition="!Exists('packages\NLog.Schema.6.1.1\build\NLog.Schema.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\NLog.Schema.6.1.1\build\NLog.Schema.targets'))" />
+    <Error Condition="!Exists('packages\Serilog.4.3.1\build\Serilog.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Serilog.4.3.1\build\Serilog.targets'))" />
   </Target>
   <Import Project="packages\NLog.Schema.6.0.1\build\NLog.Schema.targets" Condition="Exists('packages\NLog.Schema.6.0.1\build\NLog.Schema.targets')" />
-  <Import Project="packages\Serilog.4.3.0\build\Serilog.targets" Condition="Exists('packages\Serilog.4.3.0\build\Serilog.targets')" />
   <Import Project="packages\NLog.Schema.6.1.1\build\NLog.Schema.targets" Condition="Exists('packages\NLog.Schema.6.1.1\build\NLog.Schema.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
@@ -175,4 +174,5 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <Import Project="packages\Serilog.4.3.1\build\Serilog.targets" Condition="Exists('packages\Serilog.4.3.1\build\Serilog.targets')" />
 </Project>
